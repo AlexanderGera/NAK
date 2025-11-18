@@ -1,0 +1,122 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  padding-top: 20px;
+  margin-bottom: 55px;
+
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    width: 350px;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  &__logo {
+    width: 80px;
+    height: 80px;
+
+    &_title {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 24px;
+      font-family: $submenu-font-family;
+      font-weight: 700;
+
+      span {
+        font-weight: normal;
+      }
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    max-width: 1440px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    //background-color: $secondary-color-light-grey;
+    background-color: #548ec2;
+
+
+    &_link {
+      width: 135px;
+      height: 30px;
+      line-height: 30px;
+      display: inline-block;
+      //color: $primary-color-main-menu;
+      color: #ffff;
+      text-transform: uppercase;
+
+      &:not(:last-child) {
+        border-right: 1px solid #fff;
+        //border-right: 1px solid $primary-color-celestial;
+      }
+    }
+
+  }
+
+  &__top-content_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+
+
+  }
+
+  &__submenu_wrapper {
+    width: 65%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 15px;
+  }
+
+  &__submenu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+
+    &_link {
+
+
+    }
+
+  }
+
+  &__search {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+    &_input {
+      width: 120px;
+      height: 35px;
+      border: 1px solid $submenu-grey-color;
+      border-radius: 20px;
+      padding: 5px 10px;
+      font-size: 14px;
+      color: $primary-color-main-menu;
+      outline: none;
+
+      &:focus {
+        border: 2px solid $primary-color-celestial;
+      }
+
+    }
+  }
+
+}

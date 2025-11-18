@@ -1,0 +1,13 @@
+//styles import
+
+@import 'reset';
+@import "fonts";
+@import 'variables';
+@import 'general';
+
+//blocks
+
+@import "blocks/header";
+@import "blocks/banner";
+@import "blocks/main";
+@import "blocks/news";

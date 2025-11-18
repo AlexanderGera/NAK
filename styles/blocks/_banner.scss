@@ -1,0 +1,36 @@
+.banner {
+
+  &__wrapper {
+    position: relative;
+    margin-bottom: 55px;
+  }
+
+  &__text-wrapper {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: auto;
+    max-width: 600px;
+    margin-left: 15px;
+    background-color: rgba($extra-celestial-color, 0.75);
+    text-align: center;
+  }
+
+  &__text-title {
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 10px 25px;
+  }
+
+  &__img {
+    height: 415px;
+    background: $banner-background-img no-repeat center;
+    background-size: cover;
+    border-bottom: 5px solid $extra-celestial-color;
+    border-top: 5px solid $extra-celestial-color;
+  }
+
+
+}
