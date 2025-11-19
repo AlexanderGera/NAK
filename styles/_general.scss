@@ -25,33 +25,41 @@
   text-transform: uppercase;
 }
 
-.section-subtitle-font-style {
-  font-family: $title-font-family;
-  display: block;
-  position: relative;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.15em;
-  text-decoration: none;
-  text-transform: uppercase;
+.section__title {
+  &_wrapper {
+    width: 100%;
+    margin-bottom: 35px;
+    padding-left: 30px;
+  }
 
-  &::after {
+  &_font-style {
+    font-family: $title-font-family;
     display: block;
-    content: '';
-    position: absolute;
-    left: -30px;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: $extra-celestial-color;
-    transform: translateY(-50%);
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &::after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: -30px;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: $extra-celestial-color;
+      transform: translateY(-50%);
+    }
   }
 }
 
 .item-title-font-style {
   font-family: $title-font-family;
   font-size: 18px;
-  line-height: 20px ;
+  line-height: 20px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-decoration: none;

@@ -1,35 +1,35 @@
 .news {
   display: flex;
   flex-direction: column;
+  margin-bottom: 55px;
 
   &__title_wrapper {
-    width: 100%;
-    margin-bottom: 35px;
   }
 
   &__title {
-    margin-left: 30px;
   }
 
-
   &__content {
-
     &_wrapper {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       width: 100%;
       gap: 20px;
-
-
     }
 
     &_item {
       width: 385px;
       height: 400px;
-      background-color: #ffffff;
+      background-color: $secondary-color-light-grey;
       display: flex;
       flex-direction: column;
+      justify-content: flex-start;
+      gap: 15px;
+
+      &-link {
+        display: block;
+      }
 
       &_img {
         width: 385px;
@@ -37,11 +37,17 @@
         aspect-ratio: 3 / 2;
 
         &-wrapper {
-          margin-bottom: 20px;
         }
       }
+
+      &_title {
+        padding: 5px;
+      }
+      &_date {
+        display: inline-block;
+        font-weight: 400;
+        padding: 5px;
+      }
     }
-
   }
-
 }
