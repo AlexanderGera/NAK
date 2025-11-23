@@ -1,0 +1,26 @@
+.video {
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 55px;
+    justify-content: space-between;
+
+
+    &_wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 20px;
+      background-color: $secondary-color-light-grey;
+    }
+  }
+
+  &__container {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    background-color: #2C4058;
+  }
+
+}

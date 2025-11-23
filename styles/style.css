@@ -342,4 +342,24 @@ a {
   background-color: #d0baea;
 }
 
+.video__section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+  justify-content: space-between;
+}
+.video__section_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f5f5f5;
+}
+.video__container {
+  width: 300px;
+  height: auto;
+  aspect-ratio: 3/2;
+  background-color: #2C4058;
+}
+
 /*# sourceMappingURL=style.css.map */
