@@ -232,7 +232,7 @@ a {
 }
 .banner__img {
   height: 415px;
-  background: url("../img/bg_img.JPG") no-repeat center;
+  background: url("../img/backgrounds/bg_img.JPG") no-repeat center;
   background-size: cover;
   border-bottom: 5px solid #548ec2;
   border-top: 5px solid #548ec2;
@@ -360,6 +360,61 @@ a {
   height: auto;
   aspect-ratio: 3/2;
   background-color: #2C4058;
+}
+
+.searching_section {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  margin-bottom: 55px;
+  background: url("../../img/backgrounds/bg_gemeinde.jpg") no-repeat center;
+  background-size: cover;
+}
+.searching_section__form {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 70%;
+  max-width: 600px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(245, 245, 245, 0.87);
+  transform: translateX(-50%);
+  padding: 25px;
+  gap: 20px;
+}
+.searching_section__form div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.searching_section__form_title {
+  font-size: 20px;
+  color: #548ec2;
+  letter-spacing: 0.05em;
+}
+.searching_section__form_input {
+  width: 70%;
+  max-width: 600px;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+}
+.searching_section__form_button {
+  width: 100px;
+  height: 45px;
+  margin: 0 15px;
+  background-color: #548ec2;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
