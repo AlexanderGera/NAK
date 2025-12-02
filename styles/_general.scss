@@ -1,6 +1,7 @@
 .header,
 .banner__wrapper,
-.main {
+.main,
+.footer {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -63,4 +64,18 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-decoration: none;
+}
+
+
+//adopt. style for screen 1024px
+
+@media screen and (max-width: 1025px) {
+  .section__title {
+    &_wrapper {
+
+      margin-bottom: 20px;
+
+    }
+  }
+
 }

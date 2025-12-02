@@ -34,3 +34,44 @@
 
 
 }
+
+//adopt. style for screen 1024px
+
+@media screen and (max-width: 1025px) {
+
+  .banner {
+    &__wrapper {
+      margin-bottom: 35px;
+    }
+
+
+    &__img {
+      height: 350px;
+    }
+
+    &__text-title {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+//adopt. style for screen 800px
+@media screen and (max-width: 801px) {
+
+  .banner {
+    &__wrapper {
+      margin-bottom: 25px;
+    }
+
+
+    &__img {
+      height: 300px;
+    }
+
+    &__text-title {
+      font-size: 28px;
+      line-height: 28px;
+    }
+  }
+}
