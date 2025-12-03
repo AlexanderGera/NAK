@@ -262,7 +262,7 @@ a {
     height: 30px;
   }
 }
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 960px) {
   .header {
     height: 75px;
     margin-bottom: 30px;
@@ -375,13 +375,18 @@ a {
 }
 
 @media screen and (max-width: 1025px) {
+  .news__content_item {
+    max-width: 300px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 801px) {
   .news__content_wrapper {
     flex-wrap: wrap;
-    justify-content: center;
   }
   .news__content_item {
-    width: 300px;
-    height: 350px;
+    height: 325px;
+    gap: 5px;
   }
 }
 .announcement {
@@ -427,8 +432,11 @@ a {
 }
 .announcement__item_img {
   width: 150px;
-  height: auto;
   aspect-ratio: 3/2;
+  object-fit: cover;
+}
+.announcement__item_img-wrapper {
+  max-width: 285px;
 }
 .announcement__banners_wrapper {
   width: 60%;
@@ -441,10 +449,60 @@ a {
 }
 .announcement__banner_item {
   width: 100%;
-  height: 200px;
-  background-color: #d0baea;
+  max-height: 100px;
+  aspect-ratio: 8/1;
+}
+.announcement__banner_item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.announcement__banner_item_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
 }
 
+@media screen and (max-width: 960px) {
+  .announcement {
+    margin-bottom: 35px;
+  }
+  .announcement__content_wrapper {
+    flex-direction: column;
+  }
+  .announcement__items_wrapper {
+    width: auto;
+    max-width: initial;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .announcement__item {
+    flex-direction: column;
+  }
+  .announcement__item_img {
+    width: 100%;
+    height: auto;
+  }
+  .announcement__item_img-wrapper {
+    width: 100%;
+    aspect-ratio: 3/2;
+  }
+  .announcement__banners_wrapper {
+    width: 100%;
+    max-width: 930px;
+  }
+}
+@media screen and (max-width: 801px) {
+  .announcement__items_wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .announcement__item {
+    flex-direction: row;
+  }
+}
 .video__section {
   display: flex;
   flex-direction: column;
@@ -454,11 +512,12 @@ a {
 .video__section_wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 35px;
 }
 .video__item {
-  max-width: 350px;
+  max-width: 325px;
   min-width: 285px;
   height: auto;
   display: flex;

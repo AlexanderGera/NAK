@@ -14,7 +14,6 @@
     align-items: flex-start;
     gap: 35px;
   }
-
   &__logo-holder {
     width: 100%;
     display: flex;
@@ -22,35 +21,27 @@
     align-items: flex-end;
     gap: 10px;
   }
-
   &__logo {
     width: 55px;
     height: 55px;
 
-
     &_title {
       font-size: 14px;
       line-height: 20px;
-
     }
   }
-
   &__copyright-holder_wrapper {
     width: 100%;
-
   }
-
   &__copyright {
     text-transform: none;
   }
-
   &__social-holder_wrapper {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     gap: 35px;
   }
-
   &__menu {
     &_wrapper {
       width: 350px;
@@ -59,13 +50,9 @@
       align-items: flex-start;
       gap: 15px;
     }
-
     &_link {
       color: $extra-celestial-color;
       font-weight: 600;
     }
-
   }
-
-
 }

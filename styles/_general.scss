@@ -32,7 +32,6 @@
     margin-bottom: 35px;
     padding-left: 30px;
   }
-
   &_font-style {
     font-family: $title-font-family;
     display: block;
@@ -66,16 +65,11 @@
   text-decoration: none;
 }
 
-
 //adopt. style for screen 1024px
-
 @media screen and (max-width: 1025px) {
   .section__title {
     &_wrapper {
-
       margin-bottom: 20px;
-
     }
   }
-
 }

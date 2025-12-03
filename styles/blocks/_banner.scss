@@ -4,7 +4,6 @@
     position: relative;
     margin-bottom: 55px;
   }
-
   &__text-wrapper {
     position: absolute;
     top: 60%;
@@ -15,7 +14,6 @@
     background-color: rgba($extra-celestial-color, 0.75);
     text-align: center;
   }
-
   &__text-title {
     font-size: 36px;
     line-height: 38px;
@@ -23,7 +21,6 @@
     color: #ffffff;
     padding: 10px 25px;
   }
-
   &__img {
     height: 415px;
     background: $banner-background-img no-repeat center;
@@ -31,8 +28,6 @@
     border-bottom: 5px solid $extra-celestial-color;
     border-top: 5px solid $extra-celestial-color;
   }
-
-
 }
 
 //adopt. style for screen 1024px
@@ -43,12 +38,9 @@
     &__wrapper {
       margin-bottom: 35px;
     }
-
-
     &__img {
       height: 350px;
     }
-
     &__text-title {
       font-size: 30px;
       line-height: 30px;
@@ -63,12 +55,9 @@
     &__wrapper {
       margin-bottom: 25px;
     }
-
-
     &__img {
       height: 300px;
     }
-
     &__text-title {
       font-size: 28px;
       line-height: 28px;
