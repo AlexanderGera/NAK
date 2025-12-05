@@ -8,6 +8,14 @@
   padding: 0 15px;
 }
 
+.news,
+.banner__wrapper,
+.announcement,
+.video__section,
+.searching__section {
+  margin-bottom: 55px;
+}
+
 .title-font-style {
   font-family: $title-font-family;
   font-size: 16px;
@@ -32,6 +40,7 @@
     margin-bottom: 35px;
     padding-left: 30px;
   }
+
   &_font-style {
     font-family: $title-font-family;
     display: block;
@@ -65,11 +74,29 @@
   text-decoration: none;
 }
 
-//adopt. style for screen 1024px
-@media screen and (max-width: 1025px) {
+//adopt. style for screen 800px
+@media screen and (max-width: 801px) {
+  .news,
+  .banner__wrapper,
+  .announcement,
+  .video__section,
+  .searching__section {
+    margin-bottom: 35px;
+  }
   .section__title {
     &_wrapper {
       margin-bottom: 20px;
     }
+  }
+}
+
+//adopt. style for screen 600px
+
+@media screen and (max-width: 601px) {
+  .header,
+  .banner__wrapper,
+  .main,
+  .footer {
+    padding: 0 10px;
   }
 }

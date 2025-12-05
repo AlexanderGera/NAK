@@ -1,12 +1,13 @@
 .news {
   display: flex;
   flex-direction: column;
-  margin-bottom: 55px;
 
   &__title_wrapper {
   }
+
   &__title {
   }
+
   &__content {
     &_wrapper {
       display: flex;
@@ -15,18 +16,21 @@
       width: 100%;
       gap: 20px;
     }
+
     &_item {
-      max-width: 385px;
-      height: 400px;
+      max-width: 415px;
+      height: 380px;
+      max-height: 380px;
       background-color: $secondary-color-light-grey;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      gap: 15px;
+      gap: 10px;
 
       &-link {
         display: block;
       }
+
       &_img {
         width: 100%;
         height: auto;
@@ -35,27 +39,31 @@
         &-wrapper {
         }
       }
+
       &_title {
-        padding: 5px;
+        padding: 0 5px;
       }
+
       &_date {
         display: inline-block;
         font-weight: 400;
-        padding: 5px;
+        padding: 0 5px;
       }
     }
   }
 }
 
 //adopt. style for screen 1024px
-
 @media screen and (max-width: 1025px) {
 
   .news {
     &__content {
       &_item {
-        max-width: 300px;
-        height: 350px;
+        max-height: 350px;
+
+        &_title {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -69,9 +77,13 @@
       &_wrapper {
         flex-wrap: wrap;
       }
+
       &_item {
-        height: 325px;
         gap: 5px;
+        max-height: 380px;
+        &_title {
+          font-size: 16px;
+        }
       }
     }
   }

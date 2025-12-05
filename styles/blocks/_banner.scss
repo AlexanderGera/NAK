@@ -2,7 +2,6 @@
 
   &__wrapper {
     position: relative;
-    margin-bottom: 55px;
   }
   &__text-wrapper {
     position: absolute;
@@ -38,6 +37,7 @@
     &__wrapper {
       margin-bottom: 35px;
     }
+
     &__img {
       height: 350px;
     }
@@ -57,10 +57,51 @@
     }
     &__img {
       height: 300px;
+      border-bottom: 3px solid #548ec2;
+      border-top: 3px solid #548ec2;
     }
     &__text-title {
       font-size: 28px;
       line-height: 28px;
+    }
+  }
+}
+
+//adopt. style for screen 600px
+@media screen and (max-width: 601px) {
+
+  .banner {
+    &__wrapper {
+      margin-bottom: 20px;
+    }
+    &__text-wrapper {
+      margin-left: 10px;
+    }
+    &__img {
+      height: 250px;
+    }
+    &__text-title {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+}
+
+//adopt. style for screen 480px
+@media screen and (max-width: 481px) {
+
+  .banner {
+    &__wrapper {
+    }
+    &__text-wrapper {
+      margin-left: 10px;
+    }
+    &__img {
+      height: 200px;
+    }
+    &__text-title {
+      font-size: 22px;
+      line-height: 20px;
     }
   }
 }
