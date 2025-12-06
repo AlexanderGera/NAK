@@ -34,7 +34,7 @@
       width: 70%;
       max-width: 600px;
       height: 45px;
-      padding: 0 15px;
+      padding: 0 10px;
       font-size: 16px;
       font-weight: 400;
       border: none;
@@ -61,6 +61,29 @@
   .searching__section {
     &_form {
       padding: 15px;
+    }
+  }
+}
+
+//adopt. style for screen 480px
+@media screen and (max-width: 481px) {
+
+  .searching__section {
+    &_form {
+      align-items: center;
+      div {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      &_input {
+        width: 90%;
+        height: 35px;
+        padding: 0 5px;
+        font-size: 14px;
+        text-align: center;
+      }
     }
   }
 }
