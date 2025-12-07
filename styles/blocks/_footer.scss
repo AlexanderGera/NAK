@@ -18,7 +18,6 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
     gap: 10px;
   }
   &__logo {
@@ -53,30 +52,40 @@
       gap: 15px;
     }
     &_link {
+      display: inline-block;
       color: $extra-celestial-color;
       font-weight: 600;
     }
   }
 }
 
-//adopt. style for screen 480px
-@media screen and (max-width: 481px) {
-
+//adopt. style for screen 800px
+@media screen and (max-width: 801px) {
   .footer {
+    &__logo-holder_wrapper {
+      gap: 20px;
+    }
+  }
+}
+
+//adopt. style for screen 600px
+@media screen and (max-width: 601px) {
+  .footer {
+    padding-top: 10px;
     flex-direction: column-reverse;
     align-items: center;
 
     &__logo-holder_wrapper {
       align-items: center;
-      gap: 20px;
       width: 100%;
     }
-
     &__logo-holder,
     &__social-holder_wrapper,
     &__copyright-holder_wrapper {
       justify-content: center;
     }
-
+    &__menu_wrapper {
+      display: none;
+    }
   }
 }

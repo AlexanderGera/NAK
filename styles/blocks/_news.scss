@@ -4,10 +4,8 @@
 
   &__title_wrapper {
   }
-
   &__title {
   }
-
   &__content {
     &_wrapper {
       display: flex;
@@ -16,7 +14,6 @@
       width: 100%;
       gap: 20px;
     }
-
     &_item {
       max-width: 415px;
       height: 380px;
@@ -30,7 +27,6 @@
       &-link {
         display: block;
       }
-
       &_img {
         width: 100%;
         height: auto;
@@ -39,11 +35,9 @@
         &-wrapper {
         }
       }
-
       &_title {
         padding: 0 5px;
       }
-
       &_date {
         display: inline-block;
         font-weight: 400;
@@ -71,13 +65,11 @@
 
 //adopt. style for screen 800px
 @media screen and (max-width: 801px) {
-
   .news {
     &__content {
       &_wrapper {
         flex-wrap: wrap;
       }
-
       &_item {
         gap: 5px;
         max-height: 380px;
